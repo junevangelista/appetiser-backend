@@ -19,6 +19,7 @@ class CreateEventDatesTable extends Migration
                 ->constrained()
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
+            $table->date('date');
             $table->timestamps();
         });
     }
