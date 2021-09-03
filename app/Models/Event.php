@@ -9,6 +9,8 @@ class Event extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function event_dates()
     {
         return $this->hasMany(EventDate::class);

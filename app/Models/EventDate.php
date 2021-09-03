@@ -9,7 +9,9 @@ class EventDate extends Model
 {
     use HasFactory;
 
-    public function events()
+    protected $guarded = [];
+
+    public function event()
     {
         return $this->belongsTo(Event::class);
     }
